@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">On Way</string>
+
+    //Image Contents
+    <string name="img_above_clip_art">Above Clip Art</string>
+    <string name="img_main_logo">Main Logo</string>
+
+    //Login Activity Texts
+    <string name="login_text_hello">Hello, Nice to meet you!</string>
+    <string name="login_text_enter_mobile_number">Enter your mobile number</string>
+    <string name="country_code">+94</string>
+
 </resources>
