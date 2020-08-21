@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:src="@drawable/above_clip_art"
+            android:scaleType="fitXY"
             android:layout_marginTop="-35dp"
             android:contentDescription="@string/img_above_clip_art" />
 
@@ -115,6 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/below_clip_art"
+            android:scaleType="fitXY"
             android:layout_marginBottom="40dp"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"/>

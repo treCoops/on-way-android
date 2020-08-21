@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/above_clip_art"
+            android:scaleType="fitXY"
             android:paddingBottom="45dp"
             android:layout_centerInParent="true"
             android:contentDescription="@string/img_above_clip_art" />
