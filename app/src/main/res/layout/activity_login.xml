@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_main"
     tools:context=".LoginActivity">
 
@@ -62,6 +61,7 @@
             android:text="@string/login_text_enter_mobile_number"/>
 
         <LinearLayout
+            android:id="@+id/lay_mobile"
             android:background="@drawable/contact_edit_field_style"
             android:layout_below="@+id/txt_enter_contact_no"
             android:layout_width="match_parent"
@@ -111,6 +111,20 @@
 
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btn_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textSize="15sp"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:text="@string/btn_next"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/lay_mobile"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_background"
+            android:layout_height="wrap_content"/>
 
         <ImageView
             android:layout_width="match_parent"

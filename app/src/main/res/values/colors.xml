@@ -13,6 +13,8 @@
     <color name="colorHelloText">#E64949</color>
     <color name="colorHelloTextOnly">#F2545A</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorHint">#D5D2D2</color>
+    <color name="colorFadeBlack">#323131</color>
 
 
     <color name="footerTextColor">#737373</color>
