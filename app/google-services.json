@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "588304030538",
+    "firebase_url": "https://onway-53e1b.firebaseio.com",
+    "project_id": "onway-53e1b",
+    "storage_bucket": "onway-53e1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588304030538:android:12c7474e9cd3c7f1287fb3",
+        "android_client_info": {
+          "package_name": "com.trecoops.onway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588304030538-imd9e1342fptml81s1f69tlmm1tlt53g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2FggJtUym5B6tKd3nsJ2GEWBIosJeAQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588304030538-imd9e1342fptml81s1f69tlmm1tlt53g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
