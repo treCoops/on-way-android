@@ -9,146 +9,166 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorFade">
+        android:background="@color/colorFade"
+        android:paddingBottom="@dimen/_20sdp">
 
         <ImageView
             android:id="@+id/img_above"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/above_clip_art"
-            android:scaleType="fitXY"
             android:layout_marginTop="-35dp"
-            android:contentDescription="@string/img_above_clip_art" />
+            android:contentDescription="@string/img_above_clip_art"
+            android:scaleType="fitXY"
+            android:src="@drawable/above_clip_art" />
 
         <ImageView
             android:id="@+id/img_main_logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/main_logo"
-            android:contentDescription="@string/img_main_logo" />
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/img_main_logo"
+            android:src="@drawable/main_logo" />
 
         <TextView
             android:id="@+id/txt_hello"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login_text_hello"
-            android:textSize="15sp"
             android:layout_below="@+id/img_above"
-            android:layout_marginTop="60dp"
             android:layout_marginStart="20dp"
-            android:textColor="@color/colorHelloText"/>
+            android:layout_marginTop="60dp"
+            android:text="@string/login_text_hello"
+            android:textColor="@color/colorHelloText"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txt_main_text"
-            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_hello"
             android:layout_marginStart="25dp"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_middle"
+            android:transitionName="transition_layout_mid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_hello" />
-
-        <TextView
-            android:id="@+id/txt_enter_contact_no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_below="@id/txt_main_text"
-            android:textColor="@color/colorBlack"
-            android:text="@string/login_text_enter_mobile_number"/>
-
-        <LinearLayout
-            android:id="@+id/lay_mobile"
-            android:background="@drawable/contact_edit_field_style"
-            android:layout_below="@+id/txt_enter_contact_no"
-            android:layout_width="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
-            android:layout_height="@dimen/_40sdp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="18dp"
-                android:src="@drawable/srilankan_flag"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/vertical_line"/>
+            android:layout_below="@id/txt_main_text">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/txt_enter_contact_no"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="21sp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="11dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/login_text_enter_mobile_number"
                 android:textColor="@color/colorBlack"
-                android:text="@string/country_code"/>
+                android:textSize="15sp" />
 
-            <EditText
-                android:id="@+id/txt_contact_no"
-                android:textSize="21sp"
-                android:background="@drawable/edit_text_bottom_outline"
-                android:layout_width="@dimen/_180sdp"
+            <LinearLayout
+                android:id="@+id/lay_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/txt_enter_contact_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/contact_edit_field_style"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/srilankan_flag" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/vertical_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/country_code"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="21sp" />
+
+                <EditText
+                    android:id="@+id/txt_contact_no"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/edit_text_bottom_outline"
+                    android:inputType="number"
+                    android:letterSpacing="0.5"
+                    android:maxLength="9"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_btn_next"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLength="9"
-                android:inputType="number"
-                android:paddingStart="@dimen/_10sdp"
-                android:letterSpacing="0.5"
-                android:layout_marginTop="11dp"
+                android:layout_below="@id/lay_mobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_70sdp"
+                android:background="@drawable/btn_background"
+                android:text="@string/btn_next"
                 android:textColor="@color/colorBlack"
-                android:layout_marginStart="10dp"/>
+                android:textSize="15sp" />
 
+        </RelativeLayout>
 
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/login_btn_next"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:textSize="15sp"
-            android:layout_marginStart="@dimen/_70sdp"
-            android:layout_marginEnd="@dimen/_70sdp"
-            android:text="@string/btn_next"
-            android:textColor="@color/colorBlack"
-            android:layout_below="@id/lay_mobile"
-            android:layout_width="match_parent"
-            android:background="@drawable/btn_background"
-            android:layout_height="wrap_content"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/below_clip_art"
-            android:scaleType="fitXY"
-            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginBottom="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/below_clip_art" />
 
-        <TextView
-            android:id="@+id/txt_footer"
-            android:textAlignment="center"
+        <RelativeLayout
+            android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:paddingEnd="40dp"
-            android:lines="2"
-            android:paddingStart="40dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            android:textColor="@color/footerTextColor"/>
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dont_have_acc"
+                android:textColor="@color/dark_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_toEndOf="@id/txtLeft"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorHelloText"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
 
 
     </RelativeLayout>

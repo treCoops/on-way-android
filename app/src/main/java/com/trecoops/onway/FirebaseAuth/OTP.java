@@ -47,7 +47,7 @@ public class OTP {
                     verifyCode(authCode);
                 else
                     Log.e("FIREBASE_AUTH","AUTH CODE RETURNED NULL");
-                mOnAuthenticationListener.onAuthenticationSuccess();
+//                mOnAuthenticationListener.onAuthenticationSuccess();
             }
 
             @Override
@@ -60,7 +60,7 @@ public class OTP {
 
     public void sendVerification(String number){
         Log.i("FIREBASE_AUTH","Start sending verification");
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(number,120, TimeUnit.SECONDS, TaskExecutors.MAIN_THREAD,mCallback);
+        PhoneAuthProvider.getInstance().verifyPhoneNumber(number,60, TimeUnit.SECONDS, TaskExecutors.MAIN_THREAD,mCallback);
     }
 
     public void verifyCode(String code){

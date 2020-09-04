@@ -7,6 +7,7 @@
 
 
     <color name="colorFade">#DFFFFFFF</color>
+    <color name="colorSpinner">#FCD404</color>
 
     //Text Colors
     <color name="colorVersionText">#8F8D8D</color>
@@ -26,7 +27,11 @@
     <color name="AlertBlue">#2A3EBD</color>
     <color name="AlertYellow">#FFEB3B</color>
     <color name="AlertGray">#8C8C89</color>
+    <color name="dark_black">#000000</color>
+    <color name="white">#FFFFFF</color>
 
+
+    <color name="vehicle_category_bg">#262626</color>
 
 
 </resources>

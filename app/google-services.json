@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "588304030538",
-    "firebase_url": "https://onway-53e1b.firebaseio.com",
-    "project_id": "onway-53e1b",
-    "storage_bucket": "onway-53e1b.appspot.com"
+    "project_number": "652282729083",
+    "firebase_url": "https://onway-fc63a.firebaseio.com",
+    "project_id": "onway-fc63a",
+    "storage_bucket": "onway-fc63a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:588304030538:android:12c7474e9cd3c7f1287fb3",
+        "mobilesdk_app_id": "1:652282729083:android:a9df83b7eb4134679108de",
         "android_client_info": {
           "package_name": "com.trecoops.onway"
         }
       },
       "oauth_client": [
         {
-          "client_id": "588304030538-imd9e1342fptml81s1f69tlmm1tlt53g.apps.googleusercontent.com",
+          "client_id": "652282729083-8dcsoacaeudhua6dv50pb18f922n215c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trecoops.onway",
+            "certificate_hash": "6a0ab476a5656a2c2fefd7987d5c3576dd8e7588"
+          }
+        },
+        {
+          "client_id": "652282729083-kqt5bn1tmu5ajef38o8pedoffhfgv900.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD2FggJtUym5B6tKd3nsJ2GEWBIosJeAQc"
+          "current_key": "AIzaSyA1SAjlZJQ5q5K9aAshBv5KI3lA2McvM5g"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "588304030538-imd9e1342fptml81s1f69tlmm1tlt53g.apps.googleusercontent.com",
+              "client_id": "652282729083-kqt5bn1tmu5ajef38o8pedoffhfgv900.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

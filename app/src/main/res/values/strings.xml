@@ -15,6 +15,83 @@
     <string name="enter_otp_code">Enter your OTP code below</string>
     <string name="otp_resend_1">Didn\'t get the code?</string>
     <string name="otp_resend_2">Send again</string>
-    <string name="hint">XXXX</string>
+    <string name="hint">XXXXXX</string>
+    <string name="dont_have_acc">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_and_account">Already have and account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="seconds">Seconds</string>
+    <string name="btn_submit">submit</string>
+    <string name="sign_up_with">Sign up with</string>
+    <string name="onway">ONWAY</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="choose_vehicle_category">Choose vehicle category</string>
+    <string name="vehicle_model">Vehicle Model</string>
+
+
+    <string-array name="vehicle_models_bike">
+        <item>Select manufacturer</item>
+        <item>Bajaj</item>
+        <item>TVS</item>
+        <item>Honda</item>
+        <item>Yamaha</item>
+        <item>Mahendra</item>
+        <item>Aprilla</item>
+        <item>KTM</item>
+        <item>DTM</item>
+        <item>Ranmoto</item>
+        <item>Loncin</item>
+    </string-array>
+
+    <string-array name="vehicle_models_tuk">
+        <item>Select manufacturer</item>
+        <item>Bajaj</item>
+        <item>TVS</item>
+        <item>Piaggio</item>
+    </string-array>
+
+    <string-array name="brand_vehicles_micro_mini">
+        <item>Select manufacturer</item>
+        <item>Other Brand</item>
+        <item>Toyota</item>
+        <item>Suzuki</item>
+        <item>Honda</item>
+        <item>Nissan</item>
+        <item>Mitsubishi</item>
+        <item>Daihatsu</item>
+        <item>Mercedes Benz</item>
+        <item>BMW</item>
+        <item>Micro</item>
+        <item>Hyundai</item>
+        <item>Audi</item>
+        <item>Mazda</item>
+        <item>Maruti</item>
+        <item>Kia</item>
+        <item>Perodua</item>
+        <item>Tata</item>
+        <item>MG</item>
+        <item>Peugeot</item>
+        <item>Ford</item>
+        <item>Volkswagen</item>
+        <item>Austin</item>
+        <item>Renault</item>
+        <item>Cherry</item>
+        <item>Isuzu</item>
+        <item>Fiat</item>
+        <item>Chevrolet</item>
+        <item>Datsun</item>
+        <item>Mahindra</item>
+        <item>Mini</item>
+        <item>Ssang Yong</item>
+        <item>DFSK</item>
+        <item>Proton</item>
+        <item>Daewoo</item>
+        <item>Opel</item>
+        <item>Vauxhall</item>
+        <item>Alfa Romeo</item>
+        <item>Skoda</item>
+    </string-array>
 
 </resources>

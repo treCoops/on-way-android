@@ -3,132 +3,182 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_main"
     tools:context=".OTPActivity">
 
     <RelativeLayout
+        android:id="@+id/layout_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorFade">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back" />
 
         <ImageView
             android:id="@+id/img_above"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/above_clip_art"
-            android:scaleType="fitXY"
             android:layout_marginTop="-35dp"
-            android:contentDescription="@string/img_above_clip_art" />
+            android:contentDescription="@string/img_above_clip_art"
+            android:scaleType="fitXY"
+            android:src="@drawable/above_clip_art" />
 
         <ImageView
             android:id="@+id/img_main_logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/main_logo"
-            android:contentDescription="@string/img_main_logo" />
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/img_main_logo"
+            android:src="@drawable/main_logo" />
 
         <TextView
             android:id="@+id/txt_hello"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login_text_hello"
-            android:textSize="15sp"
             android:layout_below="@+id/img_above"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="60dp"
-            android:layout_marginStart="20dp"
-            android:textColor="@color/colorHelloText"/>
+            android:text="@string/login_text_hello"
+            android:textColor="@color/colorHelloText"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txt_main_text"
-            android:textSize="22sp"
-            android:text="@string/enter_otp_code"
-            android:layout_marginStart="25dp"
-            android:textColor="@color/colorBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_hello" />
+            android:layout_below="@+id/txt_hello"
+            android:layout_marginStart="25dp"
+            android:text="@string/enter_otp_code"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp" />
 
 
         <LinearLayout
             android:id="@+id/lay_code"
-            android:background="@drawable/contact_edit_field_style"
-            android:layout_below="@+id/txt_main_text"
             android:layout_width="match_parent"
-            android:layout_marginStart="@dimen/_70sdp"
-            android:layout_marginEnd="@dimen/_70sdp"
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/txt_main_text"
             android:layout_centerHorizontal="true"
-            android:layout_height="@dimen/_40sdp">
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:background="@drawable/contact_edit_field_style"
+            android:orientation="horizontal">
 
             <EditText
-                android:textSize="21sp"
+                android:id="@+id/txtCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLength="4"
-                android:inputType="number"
-                android:letterSpacing="2"
-                android:textAlignment="textStart"
-                android:hint="@string/hint"
-                android:textColorHint="@color/colorHint"
                 android:layout_marginTop="11dp"
-                android:textColor="@color/colorBlack"/>
+                android:hint="@string/hint"
+                android:inputType="number"
+                android:letterSpacing="1.2"
+                android:maxLength="6"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorHint"
+                android:textSize="21sp" />
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_below="@+id/lay_code"
+
+        <Button
+            android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorFadeBlack"
-                android:text="@string/otp_resend_1"/>
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_marginStart="5dp"
-                android:textColor="@color/colorHelloText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/otp_resend_2"/>
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:background="@drawable/btn_background"
+            android:text="@string/btn_submit"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/below_clip_art"
-            android:scaleType="fitXY"
-            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"/>
-        
+            android:layout_marginBottom="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/below_clip_art" />
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSubmit"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:paddingTop="@dimen/_15sdp">
+
+            <LinearLayout
+                android:id="@+id/layout_seconds_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSeconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/colorHelloText"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@id/txtSeconds"
+                    android:text="@string/seconds"
+                    android:textColor="@color/colorHelloText"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/txt_footer"-->
-<!--            android:textAlignment="center"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:textSize="12sp"-->
-<!--            android:paddingEnd="40dp"-->
-<!--            android:lines="2"-->
-<!--            android:paddingStart="40dp"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:textColor="@color/footerTextColor"/>-->
+            <LinearLayout
+                android:id="@+id/btnSendAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_seconds_container"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otp_resend_1"
+                    android:textColor="@color/colorFadeBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/otp_resend_2"
+                    android:textColor="@color/colorHelloText"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 

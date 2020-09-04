@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".Activity_sign_up">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFade">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_signUp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_31sdp">
+
+            <TextView
+                android:id="@+id/txt_sign_up_with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_with"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_sign_up_with"
+                android:layout_alignStart="@id/txt_sign_up_with"
+                android:layout_alignEnd="@id/txt_sign_up_with"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/onway"
+                android:textAlignment="center"
+                android:textColor="@color/colorHelloText"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_signUp_text"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/_10sdp"
+            android:scrollIndicators="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_editText_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_25sdp">
+
+                    <EditText
+                        android:id="@+id/txtFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/round_edittext_white"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp" />
+
+                    <EditText
+                        android:id="@+id/txtLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/txtFirstName"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/round_edittext_white"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_category_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtLastName"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/txt_vehicle_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="@string/choose_vehicle_category"
+                            android:textColor="@color/colorHelloText" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listVehicleCategories"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_below="@id/txt_vehicle_category"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:paddingStart="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/txtVehicleNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/layout_category_picker"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/round_edittext_white"
+                        android:hint="@string/vehicle_number"
+                        android:inputType="textCapCharacters"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_manufacturer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/txtVehicleNo"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/round_spinner_bg"
+                        android:entries="@array/vehicle_models_bike" />
+
+                    <EditText
+                        android:id="@+id/txtVehicleModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/spinner_manufacturer"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/round_edittext_white"
+                        android:hint="@string/vehicle_model"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_type_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtVehicleModel">
+
+                        <TextView
+                            android:id="@+id/txt_type_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="Choose your service categories"
+                            android:textColor="@color/colorHelloText" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listTypeCategories"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_below="@id/txt_type_category"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:paddingStart="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_type_picker"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_70sdp"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

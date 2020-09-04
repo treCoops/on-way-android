@@ -8,6 +8,9 @@ import java.util.regex.Pattern;
 
 public class Validator {
 
+    final static String NAME_PATTERN = "^[a-zA-Z ]{3,50}$";
+    final static String VEHICLE_NO_PATTERN = "";
+
     public static boolean validateEmail(String email){
         final Pattern EMAIL_PATTERN = Patterns.EMAIL_ADDRESS;
         return EMAIL_PATTERN.matcher(email).matches();
@@ -22,7 +25,7 @@ public class Validator {
     }
 
     public static boolean checkMobile(String Mobile){
-        return Mobile.matches("^7[1,2,5,6,7,8,0][0-8]+$");
+        return Mobile.matches("^7[1,2,5,6,7,8,0][0-9]+$");
     }
 
     public static boolean checkTwoSame(String a, String b){
@@ -36,5 +39,13 @@ public class Validator {
     public static boolean checkCheked(CheckBox checkBox){
         return checkBox.isChecked();
 
+    }
+
+    public static boolean validatePersonName(String name) {
+        return name.matches(NAME_PATTERN);
+    }
+
+    public static boolean validateVehicleNo(String vehicleNo) {
+        return vehicleNo.matches("^([A-Z]{1,3}|((?!0*-)[0-9]{1,3}))-[0-9]{4}(?<!0{4})");
     }
 }

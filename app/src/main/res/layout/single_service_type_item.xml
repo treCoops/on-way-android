@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_80sdp">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/round_vehicle_item" />
+
+    <ImageView
+        android:padding="@dimen/_3sdp"
+        android:layout_alignTop="@id/img_bg"
+        android:id="@+id/imgService"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignStart="@id/img_bg"
+        android:layout_alignEnd="@id/img_bg"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:src="@drawable/courier" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/imgSelected"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignEnd="@id/imgService"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/check" />
+
+    <TextView
+        android:id="@+id/txtServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgService"
+        android:layout_alignStart="@id/imgService"
+        android:layout_alignEnd="@id/imgService"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Default"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</RelativeLayout>
